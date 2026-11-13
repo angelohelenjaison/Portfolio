@@ -405,15 +405,15 @@ section {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
 .skill-card {
-    padding: 28px 15px;
+    padding: 32px 28px;
     background: var(--card);
     border: 1px solid var(--border);
-    text-align: center;
+    text-align: left;
     border-radius: 8px;
     transition: 0.3s;
 }
@@ -425,19 +425,30 @@ section {
 }
 
 .skill-card i {
+    display: block;
     color: var(--gold);
-    font-size: 30px;
-    margin-bottom: 18px;
+    font-size: 28px;
+    margin-bottom: 22px;
 }
 
 .skill-card h3 {
-    font-size: 15px;
-    margin-bottom: 8px;
+    font-size: 19px;
+    margin-bottom: 18px;
 }
 
-.skill-card p {
-    font-size: 11px;
+.skill-card ul {
+    list-style: none;
+}
+
+.skill-card li {
+    font-size: 14px;
     color: var(--muted);
+    padding: 11px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.skill-card li:last-child {
+    border-bottom: none;
 }
 
 
@@ -816,7 +827,7 @@ footer p {
     }
 
     .skills-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .projects-grid {
@@ -904,7 +915,7 @@ footer p {
     }
 
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .projects-grid {
